@@ -1,0 +1,21 @@
+﻿<Window x:Name="RNA_Folding" x:Class="RNA_Folding.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RNA_Folding"
+        mc:Ignorable="d"
+        Title="RNA Folding" Height="700" Width="900" ResizeMode="NoResize" VerticalAlignment="Center" HorizontalAlignment="Center" WindowStartupLocation="CenterScreen" Icon="RNA folding icon.png">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="467*"/>
+        </Grid.ColumnDefinitions>
+        <Rectangle x:Name="Options" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="602" Margin="761,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="122"/>
+        <Rectangle x:Name="Legend" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="59" Margin="2,602,0,0" Stroke="Black" VerticalAlignment="Top" Width="881"/>
+        <Button x:Name="Search_Button" Content="Search" HorizontalAlignment="Left" Margin="775,384,0,0" VerticalAlignment="Top" Width="95" Click="Search_Button_Click" FontSize="14" Height="36"/>
+        <Button x:Name="Upload_Button" Content="Upload" Margin="775,452,0,0" VerticalAlignment="Top" Click="Upload_Button_Click" HorizontalAlignment="Left" Width="95" FontSize="14" Height="38"/>
+        <TextBlock HorizontalAlignment="Left" Height="30" Margin="78,619,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" FontSize="20"><Run Foreground="Red" Text="Red"/><Run Foreground="Red" Text=" "/><Run Text="="/><Run Foreground="Red" Text=" "/><Run Text="A "/><Run Foreground="#FFFF8000" Text=" "/><Run Foreground="#FFFF8000" Text="Orange"/><Run Foreground="#FFFF8000" Text=" "/><Run Text="= "/><Run Text="U "/><Run Foreground="#FF00AC00" Text=" "/><Run Foreground="#FF00AC00" Text="Green"/><Run Foreground="#FF1ABB00" Text=" "/><Run Text="= "/><Run Text="G "/><Run Foreground="Blue" Text=" "/><Run Foreground="#FF00AEFF" Text="Blue "/><Run Text="= "/><Run Text="C"/></TextBlock>
+        <StackPanel x:Name="Stack_Panel" HorizontalAlignment="Left" Height="600" VerticalAlignment="Top" Width="750" MouseLeftButtonDown="Stack_Panel_MouseLeftButtonDown"/>
+        <Button x:Name="Export_String_Button" Content="Export String" Margin="775,524,0,0" VerticalAlignment="Top" Click="Export_String_Button_Click" HorizontalAlignment="Left" Width="95" FontSize="14" Height="38"/>
+    </Grid>
+</Window>
